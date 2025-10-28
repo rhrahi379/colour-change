@@ -28,3 +28,11 @@ button:hover {
 button:active {
     transform: scale(1.03);
 }
+@media screen and (max-width: 500px){
+    #bdy {
+        grid-template-columns: repeat(2, 25%);
+    }
+    button {
+        height: 150px;
+    }
+}
