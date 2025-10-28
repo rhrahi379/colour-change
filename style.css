@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#bdy {
+    width: 100%;
+    height: 100vh;
+    background-color: #eccc68;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+button {
+    height: 200px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #333;
+    transition: .3s;
+}
+button:hover {
+    transform: scale(0.97);
+}
+button:active {
+    transform: scale(1.03);
+}
