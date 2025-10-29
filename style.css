@@ -8,7 +8,7 @@
     height: 100vh;
     background-color: #eccc68;
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(4, 200px);
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -18,7 +18,7 @@ button {
     height: 200px;
     border: none;
     outline: none;
-    border-radius: 20px;
+    border-radius: 40px;
     box-shadow: 0 0 10px #333;
     transition: .3s;
 }
@@ -28,11 +28,17 @@ button:hover {
 button:active {
     transform: scale(1.03);
 }
+@media screen and (max-width: 1000px) {
+    #bdy {
+        grid-template-columns: repeat(4, 150px);
+    }
+}
 @media screen and (max-width: 500px){
     #bdy {
-        grid-template-columns: repeat(2, 25%);
+        grid-template-columns: repeat(2, 130px);
     }
     button {
-        height: 150px;
+        height: 130px;
+        border-radius: 30px;
     }
 }
